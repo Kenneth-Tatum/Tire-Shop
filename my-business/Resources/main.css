@@ -1,0 +1,155 @@
+/*Global Styling*/
+
+html {
+    font-size: 16px;
+}
+
+h2 {
+    text-align: center;
+}
+
+body {
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*Problem your currently trying to solve is: 
+1. The header needs a BG-Image **Done**
+2. Figure out if all H2's are going to be centered or not
+3. Look for the most suitable image for your mission statement
+4. Most Importantly REMEBER this project wants you to use FLEX-BOX;
+5. Add Link states for any links and or buttons and style them 
+6. Page header keeps breaking between a width of 314px and 521px ....Solution possibly create duplicate nav as a mobile class and display that on smaller screens  **Done**  */
+
+header {
+    /*Needs a defined Height  and max-width*/
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(#7373d9, grey, transparent);
+    box-shadow: 0px 4px 10px 2px #8787f1;
+    /* box-shadow: X-offset Y-offset Blur Spread; */
+    position: sticky;
+    top: 0px;
+    /* border: red solid 2px; */
+}
+
+.mobile {
+    display: none;
+}
+
+
+#logo {
+    /* For now specify Font-Family*/
+    font-size: 2.6rem;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 785px) {
+    header {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* border: red solid 2px; */
+    }
+
+    #logo {
+        /* For now specify Font-Family*/
+        font-size: 2.6rem;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 521px) {
+
+    /*Page breaks here*/
+    header {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        border: red solid 2px;
+    }
+
+    #logo {
+        /* For now specify Font-Family*/
+        font-size: 2.6rem;
+        margin: 0 auto;
+    }
+
+}
+
+
+
+
+#logo {
+    /* For now specify Font-Family*/
+    font-size: 2.6rem;
+    margin-left: 15px;
+}
+
+#logo::before {
+    content: url("/Resources/Images/tires.png");
+    /* Fill this in with a tire logo*/
+}
+
+ul#prime-nav {
+    list-style: none;
+    margin-right: 15px;
+}
+
+ul#prime-nav li {
+    display: inline;
+    font-size: 2rem;
+    padding-left: 25px;
+}
+
+ul#prime-nav a {
+    text-decoration: none;
+}
+
+/* Link States */
+
+ul#prime-nav a:link {
+    color: rgb(78, 78, 246);
+}
+
+ul#prime-nav a:visited {
+    color: rgb(180, 179, 179);
+}
+
+ul#prime-nav a:hover {
+    transition: color ease-in-out 600ms;
+    color: blue;
+}
+
+ul#prime-nav a:active {
+    padding-top: 5px;
+}
+
+/*Our Mission Styling*/
+
+#our-mission {
+    background-image: url("/Resources/Images/Tires-one.jpeg");
+    background-size: cover;
+    height: 30rem;
+}
+
+#our-mission h2 {
+    color: rgb(1, 56, 145);
+    font-size: 2rem;
+    /*Maybe make this the default default size for H2 Elements*/
+    padding: 1em;
+}
+
+#our-mission figure,
+article {
+    float: right;
+    margin-right: 20px;
+}
+
+#our-mission article {
+    clear: right;
+    /*Depending on how big the img is may clear left or center article below img */
+}

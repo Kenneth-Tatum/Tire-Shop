@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Resources/reset.css">
+    <link rel="stylesheet" href="./Resources/main.css">
+    <!-- Add Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
+    <title>Are You Tire'd</title>
+</head>
+
+<body>
+    <header>
+        <!--Turn into Flex container and justify content to Space between    Also give header a left and right nargin in dev tools to check space on outside of container-->
+        <div id="logo">Are You Tire'd</div>
+        <!--Place a Name in the div and use the psuedo element ::before to Place an image or svg-->
+        <nav>
+            <ul id="prime-nav" class="mobile">
+                <li><a href="#our-mission">Our Mission</a></li> <!--Name after each Section on your page-->
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul id="prime-nav">
+                <li><a href="#our-mission">Our Mission</a></li> <!--Name after each Section on your page-->
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="our-mission">
+            <h2>We make sure you leave Tire'd, so you can rest easy!</h2> <!--Our Mission goes here-->
+            <figure>
+                <img src="" alt="People smiling and shaking hands">
+                <!--Add a image of people smiling and shaking hands or changin tires ..... LOL-->
+                <figcaption>Photo by </figcaption>
+            </figure>
+            <article>description of mission</article> <!--Brief description of our mission -->
+        </section>
+
+        <section id="services">
+            <h2>Services</h2>
+            <div id="services-container">
+                <div class="service">
+                    <!--Each Service could have a background-image and be the relative parent of text at the bottom -->
+                    <p>Name of service</p>
+                </div>
+
+                <div class="service">
+                    <p>Name of service</p>
+                </div>
+
+                <div class="service">
+                    <p>Name of service</p>
+                </div>
+            </div>
+
+        </section>
+        <section id="Contacts">
+            <!-- Figure out how to add a map and look up how to make a form since it's been a while. -->
+        </section>
+    </main>
+    <footer>
+        <a href="https://www.flaticon.com/free-icons/tire" title="tire icons">Tire icons created by Freepik -
+            Flaticon</a>
+    </footer>
+
+</body>
+
+</html>

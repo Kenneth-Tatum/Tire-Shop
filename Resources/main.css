@@ -15,12 +15,11 @@ body {
 }
 
 /*Problem your currently trying to solve is: 
-1. The header needs a BG-Image **Done**
-2. Figure out if all H2's are going to be centered or not
-3. Look for the most suitable image for your mission statement
-4. Most Importantly REMEBER this project wants you to use FLEX-BOX;
-5. Add Link states for any links and or buttons and style them 
-6. Page header keeps breaking between a width of 314px and 521px ....Solution possibly create duplicate nav as a mobile class and display that on smaller screens  **Done**  */
+1.Figure out if all H2's are going to be centered or not
+2. Look for the most suitable image for your mission statement
+3. Most Importantly REMEBER this project wants you to use FLEX-BOX;
+4. Add Link states for any links and or buttons and style them
+5. Page header keeps breaking between a width of 314px and 521px ....Solution possibly create duplicate nav as a mobile class and display that on smaller screens  **Done** */
 
 header {
     /*Needs a defined Height  and max-width*/
@@ -112,16 +111,16 @@ ul#prime-nav a {
 /* Link States */
 
 ul#prime-nav a:link {
-    color: rgb(78, 78, 246);
+    color: #4e4ef6;
 }
 
 ul#prime-nav a:visited {
-    color: rgb(180, 179, 179);
+    color: #b4b3b3;
 }
 
 ul#prime-nav a:hover {
     transition: color ease-in-out 600ms;
-    color: blue;
+    color: #0000ff;
 }
 
 ul#prime-nav a:active {
@@ -137,7 +136,7 @@ ul#prime-nav a:active {
 }
 
 #our-mission h2 {
-    color: rgb(1, 56, 145);
+    color: #4e4ef6;
     font-size: 2rem;
     /*Maybe make this the default default size for H2 Elements*/
     padding: 1em;
@@ -147,11 +146,26 @@ ul#prime-nav a:active {
 article {
     float: right;
     margin-right: 20px;
+    margin-left: 20%;
 }
 
 #our-mission article {
-    clear: right;
+    clear: left;
+    color: #c9c9e9;
     /*Depending on how big the img is may clear left or center article below img */
+}
+
+#our-mission figure{
+    height: auto;
+    max-width: 25%;
+}
+
+#our-mission img{
+    border-radius: 10px;
+}
+
+#our-mission figcaption{
+    color: #c9c9e9;
 }
 
 
@@ -164,7 +178,10 @@ article {
 
 #services h2{
     background: linear-gradient(#7373d9, grey, transparent);
-    font-size: 2rem;
+    box-shadow: 0px 4px 10px 2px #8787f1;
+    font-size: 2.3rem;
+    color: #4e4ef6;
+    height: 65px;
 }
 
 #services-container{

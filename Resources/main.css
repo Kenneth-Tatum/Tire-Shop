@@ -15,14 +15,13 @@ body {
 }
 
 /*Problem your currently trying to solve is: 
-1.Figure out if all H2's are going to be centered or not
-2. Look for the most suitable image for your mission statement
+1.Figure out if all H2's are going to be centered or not **Done**
+2. Look for the most suitable image for your mission statement **Done**
 3. Most Importantly REMEBER this project wants you to use FLEX-BOX;
-4. Add Link states for any links and or buttons and style them
+4. Add Link states for any links and or buttons and style them **Almost Done**
 5. Page header keeps breaking between a width of 314px and 521px ....Solution possibly create duplicate nav as a mobile class and display that on smaller screens  **Done** */
 
 header {
-    /*Needs a defined Height  and max-width*/
     max-width: 100%;
     display: flex;
     justify-content: space-between;
@@ -31,7 +30,6 @@ header {
     /* box-shadow: X-offset Y-offset Blur Spread; */
     position: sticky;
     top: 0px;
-    /* border: red solid 2px; */
 }
 
 .mobile {
@@ -40,12 +38,13 @@ header {
 
 
 #logo {
-    /* For now specify Font-Family*/
+
     font-size: 2.6rem;
     margin: 0 auto;
 }
 
 @media only screen and (max-width: 785px) {
+
     header {
         max-width: 100%;
         display: flex;
@@ -55,7 +54,7 @@ header {
     }
 
     #logo {
-        /* For now specify Font-Family*/
+
         font-size: 2.6rem;
         margin: 0 auto;
     }
@@ -70,7 +69,7 @@ header {
     }
 
     #logo {
-        /* For now specify Font-Family*/
+
         font-size: 2.6rem;
         margin: 0 auto;
     }
@@ -81,14 +80,13 @@ header {
 
 
 #logo {
-    /* For now specify Font-Family*/
+
     font-size: 2.6rem;
     margin-left: 15px;
 }
 
 #logo::before {
     content: url("/Resources/Images/tires.png");
-    /* Fill this in with a tire logo*/
 }
 
 ul#prime-nav {
@@ -136,7 +134,6 @@ ul#prime-nav a:active {
 #our-mission h2 {
     color: #4e4ef6;
     font-size: 2rem;
-    /*Maybe make this the default default size for H2 Elements*/
     padding: 1em;
 }
 
@@ -144,114 +141,116 @@ ul#prime-nav a:active {
 article {
     float: right;
     margin-right: 20px;
-    margin-left: 2%; /*Definitley going to need a media query for this*/
+    margin-left: 2%;
 }
 
 #our-mission article {
     /* clear: left; */
-    color: #c9c9e9;    /*Definitley going to need a media query for this*/
+    color: #c9c9e9;
     font-size: 1.5rem;
     max-width: 40%;
 }
 
-#our-mission figure{
+#our-mission figure {
     height: auto;
-    max-width: 25%;      /*Definitley going to need a media query for this*/
+    max-width: 25%;
 }
 
 @media only screen and (max-width: 910px) {
-    
-    #our-mission figure{
+
+    #our-mission figure {
         display: none;
         float: right;
         margin-right: 20px;
-        margin-left: 2%; /*Definitley going to need a media query for this*/
+        margin-left: 2%;
     }
-    
+
     #our-mission article {
         /* clear: left; */
         text-align: center;
-        color: #c9c9e9;    /*Definitley going to need a media query for this*/
+        color: #c9c9e9;
         font-size: 2.1rem;
         max-width: 100%;
     }
-    
+
 }
 
 @media only screen and (max-width: 746px) {
-    
+
     #our-mission {
-      position: relative;
+        position: relative;
     }
-    
-    #our-mission h2{
+
+    #our-mission h2 {
         position: absolute;
-        background-color: rgba(9, 9, 16, 0.4); /*Dark overlay*/
+        background-color: rgba(9, 9, 16, 0.4);
+        /*Dark overlay*/
         height: 100%;
         transition: background-color ease-in-out 1000ms;
         width: 100%;
     }
-    
-    #our-mission figure{
+
+    #our-mission figure {
         display: none;
         float: right;
         margin-right: 20px;
-        margin-left: 2%; /*Definitley going to need a media query for this*/
+        margin-left: 2%;
     }
-    
+
     #our-mission article {
         /* clear: left; */
         text-align: center;
-        color: #c9c9e9;    /*Definitley going to need a media query for this*/
+        color: #c9c9e9;
         font-size: 1.6rem;
         max-width: 100%;
-
         position: relative;
         top: 40%;
     }
-    
+
 }
 
 @media only screen and (max-width: 425px) {
-    
+
     #our-mission {
-      position: relative;
+        position: relative;
     }
-    
-    #our-mission h2{
+
+    #our-mission h2 {
         position: absolute;
-        background-color: rgba(9, 9, 16, 0.6); /*Dark overlay*/
+        background-color: rgba(9, 9, 16, 0.6);
+        /*Dark overlay*/
         height: 100%;
         transition: background-color ease-in-out 1000ms;
     }
 
 
-    #our-mission figure{
+    #our-mission figure {
         display: none;
         float: right;
         margin-right: 20px;
-        margin-left: 2%; /*Definitley going to need a media query for this*/
+        margin-left: 2%;
     }
-    
+
     #our-mission article {
         /* clear: left; */
         position: relative;
         top: 40%;
         text-align: center;
-        color: #c9c9e9;    /*Definitley going to need a media query for this*/
+        color: #c9c9e9;
         font-size: 1.3rem;
         max-width: 100%;
     }
-    
+
 }
 
 
 @media only screen and (max-width: 370px) {
 
 
-    #our-mission h2{
+    #our-mission h2 {
         position: absolute;
-        background-color: rgba(9, 9, 16, 0.8); /*Dark overlay*/
+        background-color: rgba(9, 9, 16, 0.8);
+        /*Dark overlay*/
         height: 100%;
         transition: background-color ease-in-out 1000ms;
     }
@@ -263,23 +262,21 @@ article {
 }
 
 
-#our-mission img{
+#our-mission img {
     border-radius: 10px;
 }
 
-#our-mission figcaption{
+#our-mission figcaption {
     color: #c9c9e9;
 }
 
 
 /*Services Styling*/
 
-#services{
-
-}
+#services {}
 
 
-#services h2{
+#services h2 {
     background: linear-gradient(#7373d9, grey, transparent);
     box-shadow: 0px 4px 10px 2px #8787f1;
     font-size: 2.3rem;
@@ -287,7 +284,7 @@ article {
     height: 65px;
 }
 
-#services-container{
+#services-container {
     display: flex;
     justify-content: space-evenly;
 }

@@ -51,7 +51,7 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* border: red solid 2px; */
+
     }
 
     #logo {
@@ -63,12 +63,10 @@ header {
 
 @media only screen and (max-width: 521px) {
 
-    /*Page breaks here*/
     header {
         max-width: 100%;
         display: flex;
         align-items: center;
-        border: red solid 2px;
     }
 
     #logo {
@@ -146,19 +144,124 @@ ul#prime-nav a:active {
 article {
     float: right;
     margin-right: 20px;
-    margin-left: 20%;
+    margin-left: 2%; /*Definitley going to need a media query for this*/
 }
 
 #our-mission article {
-    clear: left;
-    color: #c9c9e9;
-    /*Depending on how big the img is may clear left or center article below img */
+    /* clear: left; */
+    color: #c9c9e9;    /*Definitley going to need a media query for this*/
+    font-size: 1.5rem;
+    max-width: 40%;
 }
 
 #our-mission figure{
     height: auto;
-    max-width: 25%;
+    max-width: 25%;      /*Definitley going to need a media query for this*/
 }
+
+@media only screen and (max-width: 910px) {
+    
+    #our-mission figure{
+        display: none;
+        float: right;
+        margin-right: 20px;
+        margin-left: 2%; /*Definitley going to need a media query for this*/
+    }
+    
+    #our-mission article {
+        /* clear: left; */
+        text-align: center;
+        color: #c9c9e9;    /*Definitley going to need a media query for this*/
+        font-size: 2.1rem;
+        max-width: 100%;
+    }
+    
+}
+
+@media only screen and (max-width: 746px) {
+    
+    #our-mission {
+      position: relative;
+    }
+    
+    #our-mission h2{
+        position: absolute;
+        background-color: rgba(9, 9, 16, 0.4); /*Dark overlay*/
+        height: 100%;
+        transition: background-color ease-in-out 1000ms;
+        width: 100%;
+    }
+    
+    #our-mission figure{
+        display: none;
+        float: right;
+        margin-right: 20px;
+        margin-left: 2%; /*Definitley going to need a media query for this*/
+    }
+    
+    #our-mission article {
+        /* clear: left; */
+        text-align: center;
+        color: #c9c9e9;    /*Definitley going to need a media query for this*/
+        font-size: 1.6rem;
+        max-width: 100%;
+
+        position: relative;
+        top: 40%;
+    }
+    
+}
+
+@media only screen and (max-width: 425px) {
+    
+    #our-mission {
+      position: relative;
+    }
+    
+    #our-mission h2{
+        position: absolute;
+        background-color: rgba(9, 9, 16, 0.6); /*Dark overlay*/
+        height: 100%;
+        transition: background-color ease-in-out 1000ms;
+    }
+
+
+    #our-mission figure{
+        display: none;
+        float: right;
+        margin-right: 20px;
+        margin-left: 2%; /*Definitley going to need a media query for this*/
+    }
+    
+    #our-mission article {
+        /* clear: left; */
+        position: relative;
+        top: 40%;
+        text-align: center;
+        color: #c9c9e9;    /*Definitley going to need a media query for this*/
+        font-size: 1.3rem;
+        max-width: 100%;
+    }
+    
+}
+
+
+@media only screen and (max-width: 370px) {
+
+
+    #our-mission h2{
+        position: absolute;
+        background-color: rgba(9, 9, 16, 0.8); /*Dark overlay*/
+        height: 100%;
+        transition: background-color ease-in-out 1000ms;
+    }
+
+    #our-mission article {
+        font-size: 1.1rem;
+    }
+
+}
+
 
 #our-mission img{
     border-radius: 10px;

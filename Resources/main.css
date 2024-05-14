@@ -315,6 +315,29 @@ article {
 }
 
 #services-container {
+    height: auto;
     display: flex;
     justify-content: space-evenly;
+    border: solid 3px rgb(50, 111, 243);
+}
+
+.service{
+    position: relative;
+    border: solid 3px red;
+}
+
+.service p{
+    /* position: absolute; */
+}
+
+
+
+
+
+/*Footer Styling*/
+
+footer{
+
+    height: 100%;
+    border: solid 3px rgb(0, 174, 52);
 }

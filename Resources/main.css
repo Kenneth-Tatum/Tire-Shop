@@ -316,6 +316,7 @@ article {
 
 #services-container {
     height: auto;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     border: solid 3px rgb(50, 111, 243);
@@ -323,11 +324,16 @@ article {
 
 .service{
     position: relative;
+    background-color:chocolate; /*Replace with images once you find proper placement*/
+    height: 10rem;
+    width: 25%;
     border: solid 3px red;
 }
 
 .service p{
-    /* position: absolute; */
+    position: absolute;
+    font-size: 2rem;
+    bottom: 0;
 }
 
 

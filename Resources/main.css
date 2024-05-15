@@ -333,17 +333,17 @@ article {
 }
 
 .service.alignment{
-background-image: url("/Resources/Images/wheel-alignment.jpg"); /*Replace with images once you find proper placement*/
+background-image: url("/Resources/Images/wheel-alignment.jpg");
 background-size: cover;
 }
 
 .service.brakes{
-background-image: url("/Resources/Images/checking-brakes.webp"); /*Replace with images once you find proper placement*/
+background-image: url("/Resources/Images/checking-brakes.webp");
 background-size: cover;
 }
 
 .service.batteries{
-background-image: url("/Resources/Images/battery.webp"); /*Replace with images once you find proper placement*/
+background-image: url("/Resources/Images/battery.webp");
 background-size: cover;
 background-repeat:no-repeat ;
 }

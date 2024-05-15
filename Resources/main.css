@@ -364,17 +364,17 @@ article {
 }
 
 .service.alignment{
-    background-image: url("/Resources/Images/wheel-alignment.jpg");
+    background-image: url("https://t4.ftcdn.net/jpg/01/29/75/91/240_F_129759159_ziC7X6c2xPYohha3XHhtjDgAQfbmeGxU.jpg");
     background-size: cover;
 }
 
 .service.brakes{
-    background-image: url("/Resources/Images/checking-brakes.webp");
+    background-image: url("https://images.pexels.com/photos/6870323/pexels-photo-6870323.jpeg?auto=compress&cs=tinysrgb&w=600");
     background-size: cover;
 }
 
 .service.batteries{
-    background-image: url("/Resources/Images/battery.webp");
+    background-image: url("https://images.pexels.com/photos/4517073/pexels-photo-4517073.jpeg?auto=compress&cs=tinysrgb&w=600");
     background-size: cover;
 }
 

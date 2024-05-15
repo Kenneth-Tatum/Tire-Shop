@@ -14,13 +14,6 @@ body {
     font-style: normal;
 }
 
-/*Problem your currently trying to solve is: 
-1.Figure out if all H2's are going to be centered or not **Done**
-2. Look for the most suitable image for your mission statement **Done**
-3. Most Importantly REMEBER this project wants you to use FLEX-BOX;
-4. Add Link states for any links and or buttons and style them **Almost Done**
-5. Page header keeps breaking between a width of 314px and 521px ....Solution possibly create duplicate nav as a mobile class and display that on smaller screens  **Done** */
-
 header {
     max-width: 100%;
     display: flex;
@@ -345,12 +338,15 @@ background-size: cover;
 .service.batteries{
 background-image: url("/Resources/Images/battery.webp");
 background-size: cover;
-background-repeat:no-repeat ;
 }
 
 
-.service p{
+.service a{
     font-size: 2rem;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
 }
 
 

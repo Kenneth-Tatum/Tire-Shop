@@ -229,6 +229,44 @@ article {
 
 }
 
+
+@media only screen and (min-width: 426px) and (max-width: 575px) {
+
+    #our-mission {
+        position: relative;
+    }
+
+    #our-mission h2 {
+        position: absolute;
+        background-color: rgba(9, 9, 16, 0.4);
+        /*Dark overlay*/
+        height: 100%;
+        transition: background-color ease-in-out 1000ms;
+        width: 100%;
+    }
+
+    #our-mission figure {
+        display: none;
+        float: right;
+        margin-right: 20px;
+        margin-left: 2%;
+    }
+
+    #our-mission article {
+        /* clear: left; */
+        text-align: center;
+        color: #c9c9e9;
+        font-size: 1.48rem;
+        max-width: 100%;
+        position: relative;
+        top: 28%;
+    }
+
+}
+
+
+
+
 @media only screen and (max-width: 425px) {
 
     #our-mission {
@@ -320,24 +358,24 @@ article {
 .service{
     /* position: relative; */
     height: 70%;
-    width: 15%;
+    width: 17%; /*this breaks at a width of 702 fix it*/
     border-radius: 15px;
     /* border: solid 3px red; */
 }
 
 .service.alignment{
-background-image: url("/Resources/Images/wheel-alignment.jpg");
-background-size: cover;
+    background-image: url("/Resources/Images/wheel-alignment.jpg");
+    background-size: cover;
 }
 
 .service.brakes{
-background-image: url("/Resources/Images/checking-brakes.webp");
-background-size: cover;
+    background-image: url("/Resources/Images/checking-brakes.webp");
+    background-size: cover;
 }
 
 .service.batteries{
-background-image: url("/Resources/Images/battery.webp");
-background-size: cover;
+    background-image: url("/Resources/Images/battery.webp");
+    background-size: cover;
 }
 
 
@@ -347,7 +385,12 @@ background-size: cover;
     display: inline-block;
     width: 100%;
     height: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px 2px #04040e;
+    /* box-shadow: X-offset Y-offset Blur Spread; */
 }
+
+                /*Service Link States*/
 
 
 

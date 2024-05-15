@@ -315,25 +315,42 @@ article {
 }
 
 #services-container {
-    height: auto;
+    height: 26rem;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
     border: solid 3px rgb(50, 111, 243);
 }
 
 .service{
-    position: relative;
-    background-color:chocolate; /*Replace with images once you find proper placement*/
-    height: 10rem;
-    width: 25%;
-    border: solid 3px red;
+    /* position: relative; */
+    height: 70%;
+    width: 15%;
+    border-radius: 15px;
+    /* border: solid 3px red; */
 }
 
+.service.alignment{
+background-image: url("/Resources/Images/wheel-alignment.jpg"); /*Replace with images once you find proper placement*/
+background-size: cover;
+}
+
+.service.brakes{
+background-image: url("/Resources/Images/checking-brakes.webp"); /*Replace with images once you find proper placement*/
+background-size: cover;
+}
+
+.service.batteries{
+background-image: url("/Resources/Images/battery.webp"); /*Replace with images once you find proper placement*/
+background-size: cover;
+background-repeat:no-repeat ;
+}
+
+
 .service p{
-    position: absolute;
     font-size: 2rem;
-    bottom: 0;
 }
 
 

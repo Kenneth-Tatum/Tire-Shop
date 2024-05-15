@@ -338,7 +338,7 @@ article {
 
 
 #services h2 {
-    background: linear-gradient(#7373d9, grey, transparent);
+    background: linear-gradient(#0a0a0f, grey, transparent);
     /* box-shadow: 0px 4px 10px 2px #8787f1; */
     font-size: 2.3rem;
     color: #4e4ef6;
@@ -352,7 +352,7 @@ article {
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    border: solid 3px rgb(50, 111, 243);
+    /* border: solid 3px rgb(50, 111, 243); */
 }
 
 .service{
@@ -401,5 +401,5 @@ article {
 footer{
 
     height: 100%;
-    border: solid 3px rgb(0, 174, 52);
+    /* border: solid 3px rgb(0, 174, 52); */
 }

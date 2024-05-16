@@ -358,10 +358,12 @@ article {
 .service{
     /* position: relative; */
     height: 70%;
-    width: 17%; /*this breaks at a width of 702 fix it*/
+    width: 17%; /*this breaks at a width of 710 fix it*/
     border-radius: 15px;
     /* border: solid 3px red; */
 }
+
+                    /*Service Images*/
 
 .service.alignment{
     background-image: url("https://t4.ftcdn.net/jpg/01/29/75/91/240_F_129759159_ziC7X6c2xPYohha3XHhtjDgAQfbmeGxU.jpg");
@@ -392,9 +394,21 @@ article {
 
                 /*Service Link States*/
 
+.service a:link{
+    
+}
 
+.service a:visited{
 
+}
 
+.service a:hover{
+
+}
+
+.service a:active{
+
+}
 
 /*Footer Styling*/
 

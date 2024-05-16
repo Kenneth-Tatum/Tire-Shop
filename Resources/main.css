@@ -397,6 +397,7 @@ article {
     box-shadow: 0px 4px 10px 2px #04040e;
     /* box-shadow: X-offset Y-offset Blur Spread; */
     /* border: solid 3px red; */
+    transition: all ease-in-out 1500ms;
 }
 
 .service:hover{
@@ -429,8 +430,7 @@ article {
     width: 100%;
     height: 100%;
     border-radius: 15px;
-    /* position: relative;
-    top: 30%; */
+    transition: all ease-in-out 1000ms;
 }
 
 /*Service Link States*/
@@ -445,7 +445,9 @@ article {
 }
 
 .service a:hover{
-
+    padding-top: 30%;
+    transition: all ease-in-out 1000ms;
+    
 }
 
 .service a:active{

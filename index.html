@@ -15,15 +15,27 @@
 
 <body>
     <header>
-        <!--Turn into Flex container and justify content to Space between    Also give header a left and right nargin in dev tools to check space on outside of container-->
+
         <div id="logo">Are You Tire'd</div>
-        <!--Place a Name in the div and use the psuedo element ::before to Place an image or svg-->
+
         <nav>
             <ul id="prime-nav">
-                <li><a href="#our-mission">Our Mission</a></li> <!--Name after each Section on your page-->
+                <li><a href="#our-mission">Our Mission</a></li> 
                 <li><a href="#services">Services</a></li>
                 <li><a href="#contacts">Contacts</a></li>
             </ul>
+        </nav>
+        <nav id="mobile-nav">
+            <ul id="prime-nav-mobile">
+                <li class="nav-item"><a class="nav-link" href="#our-mission">Our Mission</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacts">Contacts</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
     <main>

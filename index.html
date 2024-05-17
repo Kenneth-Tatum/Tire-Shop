@@ -26,7 +26,7 @@
             </ul>
         </nav>
         <nav id="mobile-nav">
-            <ul id="prime-nav-mobile">
+            <ul class="mobile-menu">
                 <li class="nav-item"><a class="nav-link" href="#our-mission">Our Mission</a></li>
                 <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contacts">Contacts</a></li>
@@ -76,6 +76,27 @@
             Flaticon</a>
     </footer>
 
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".mobile-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+    </script>
 </body>
 
 </html>

@@ -27,6 +27,7 @@ header {
 
 #mobile-nav {
     display: none;
+    margin-right: ;
 }
 
 
@@ -87,10 +88,11 @@ header {
         background-color: #101010;
     }
 
-    #prime-nav-mobile {
+    .mobile-menu {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 0;
         
     }
 
@@ -99,7 +101,8 @@ header {
     }
 
     .nav-link{
-        font-size: 1.17rem;
+        /* font-size: 1.17rem; */
+        font-size: 1rem;
         font-weight: 400;
         color: #4949f8;
     }
@@ -108,28 +111,77 @@ header {
         color: #1313ff;
     }
 
+    .mobile-menu{
+        opacity: 0;
+        margin-right: 10px;
+        transition: 0.3s;
+    }
+    
+    .mobile-menu.active{
+        opacity: 1;
+        transition: 0.3s;
+    }
+    
+    .nav-item {
+        margin: 0 0.5rem;
+    }
+    
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    
 }
 
 
-@media only screen and (max-width: 425px) {
-
-    /* header {
+@media only screen and (max-width: 465px) {
+    
+    header {
         max-width: 100%;
         display: flex;
         justify-content: center;
+        flex-direction: column;
     }
-
+    
     #logo {
-        text-align: center;
-        font-size: 2.6rem;
+        /* text-align: center; */
+        /* font-size: 2.6rem; */
+        font-size: min(0.5rem);  /*Come back to this*/
+        font-size: max(2.6rem);  /*Come back to this*/
+        /* font-size: calc(7px + .5vw); */
         margin: 0px;
     }
+    
+    .mobile-menu{ 
+        opacity: 0;            
+        margin-right: 0;
+        transition: 0.3s;
+    }
+    
+    .mobile-menu.active{
+        opacity: 1;
+        margin-right: 0;
+        transition: 0.3s;
+    }
 
-    ul#prime-nav {
+    /* ul#prime-nav {
         padding: 0;
         margin: 0;
         text-align: center;
-
+        
     }
     
     ul#prime-nav li{
@@ -397,7 +449,7 @@ article {
     box-shadow: 0px 4px 10px 2px #04040e;
     /* box-shadow: X-offset Y-offset Blur Spread; */
     /* border: solid 3px red; */
-    transition: all ease-in-out 1500ms;
+    transition: all ease-in-out 1000ms;
 }
 
 .service:hover{
@@ -451,7 +503,7 @@ article {
 }
 
 .service a:active{
-
+    padding-top: 30.5%;
 }
 
 /*Footer Styling*/

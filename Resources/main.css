@@ -1,5 +1,9 @@
 /*Global Styling*/
 
+*{
+    scroll-behavior: smooth;
+}
+
 html {
     font-size: 16px;
 }
@@ -34,6 +38,10 @@ header {
 #logo {
     font-size: 2.6rem;
     margin-left: 15px;
+}
+
+#mobile-logo{
+    display: none;
 }
 
 @media only screen and (max-width: 785px) {
@@ -175,6 +183,37 @@ header {
         margin-right: 0;
         transition: 0.3s;
     }
+}
+
+@media only screen and (max-width: 391px) {
+
+    #logo {
+        /* font-size: calc(100% - 2vw); */
+        display: none;
+        border: red solid;
+    }
+
+    #mobile-logo {
+        display: inline-block;
+        font-size: 2.3rem;
+
+    }
+
+    #mobile-logo::before {
+        content: url("/Resources/Images/tires.png");
+    }
+
+    .nav-link{
+        /* font-size: 1.17rem; */
+        font-size: .8rem;
+        font-weight: 400;
+        color: #4949f8;
+    }
+
+    .remove-at-320px{
+        display: none;
+    }
+
 }
 
 
@@ -377,21 +416,48 @@ article {
 
 @media only screen and (max-width: 370px) {
 
+    #our-mission{
+        /* border: red solid; */
+        box-shadow: 0px 4px 10px 2px #4b4bcd; /* Maybe change this color or delete it */
+    }
 
     #our-mission h2 {
         position: absolute;
         background-color: rgba(9, 9, 16, 0.8);
         /*Dark overlay*/
         height: 100%;
+        font-size: 1.6rem;
         transition: background-color ease-in-out 1000ms;
     }
 
     #our-mission article {
-        font-size: 1.1rem;
+        font-size: 1rem;
+        /* border: red solid; */
     }
 
 }
 
+@media only screen and (max-width: 320px) {
+
+    #our-mission{
+        /* border: red solid; */
+        box-shadow: 0px 4px 10px 2px #4b4bcd; /* Maybe change this color or delete it */
+    }
+
+    #our-mission h2 {
+        position: absolute;
+        background-color: rgba(9, 9, 16, 0.8);
+        /*Dark overlay*/
+        height: 100%;
+        font-size: 1.4rem;
+        transition: background-color ease-in-out 1000ms;
+    }
+
+    #our-mission article {
+        font-size: .9rem;
+    }
+
+}
 
 #our-mission img {
     border-radius: 10px;
@@ -478,8 +544,15 @@ article {
 
 @media only screen and (max-width: 489px){  /* Fix the Flex box container either add overflow property or ...*/
     
+    #services {
+        background: linear-gradient(transparent ,grey, #4e4ef6);
+        height: 35rem;
+        /* border: solid 3px rgb(61, 197, 204); */
+    }
+
+
     #services-container {
-        height: 26rem;
+        height: 90%;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -487,7 +560,7 @@ article {
         align-items: center;
         align-content: space-between;
         text-align: center;
-        border: solid 3px rgb(240, 12, 9);
+        /* border: solid 3px rgb(240, 12, 9); */
     } 
 
     .service a{
@@ -497,7 +570,41 @@ article {
         width: 100%;
         height: 100%;
         border-radius: 15px;
+        transition: border-radius ease-in-out 1000ms,
+        padding ease-in-out 1000ms;
+    }
+
+    .service.alignment{
+        background-image: url("https://t4.ftcdn.net/jpg/01/29/75/91/240_F_129759159_ziC7X6c2xPYohha3XHhtjDgAQfbmeGxU.jpg");
+        background-size: cover;
+        width: 50%;
+    }
+    
+    .service.brakes{
+        background-image: url("https://images.pexels.com/photos/6870323/pexels-photo-6870323.jpeg?auto=compress&cs=tinysrgb&w=600");
+        background-size: cover;
+        width: 50%;
+    }
+    
+    .service.batteries{
+        background-image: url("https://images.pexels.com/photos/4517073/pexels-photo-4517073.jpeg?auto=compress&cs=tinysrgb&w=600");
+        background-size: cover;
+        width: 50%;
+    }
+
+    .service{
+        margin-bottom: 5%;
+    }
+
+    .service a:hover{
+        padding-top: 20%;
         transition: all ease-in-out 1000ms;
+        
+    }
+    
+    .service a:active{
+        padding-top: 20.5%; /*come back and fix this*/
+        
     }
     
 }
@@ -530,7 +637,7 @@ article {
 /*Footer Styling*/
 
 footer{
-
-    height: 100%;
+    max-width: 100%;
+    height: 100px;
     /* border: solid 3px rgb(0, 174, 52); */
 }

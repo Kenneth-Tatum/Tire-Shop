@@ -1,6 +1,6 @@
 /*Global Styling*/
 
-*{
+* {
     scroll-behavior: smooth;
 }
 
@@ -40,7 +40,7 @@ header {
     margin-left: 15px;
 }
 
-#mobile-logo{
+#mobile-logo {
     display: none;
 }
 
@@ -75,18 +75,19 @@ header {
         font-size: 2rem;
         margin: 0;
     }
-                        /*Test Hamburger Menu*/
-    ul#prime-nav{
+
+    /*Test Hamburger Menu*/
+    ul#prime-nav {
         display: none;
     }
 
-    #mobile-nav{
+    #mobile-nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
-    .bar{
+    .bar {
         display: block;
         width: 25px;
         height: 3px;
@@ -100,85 +101,86 @@ header {
         justify-content: space-between;
         align-items: center;
         padding: 0;
-        
+
     }
 
     .nav-item {
         margin-left: 1rem;
     }
 
-    .nav-link{
+    .nav-link {
         /* font-size: 1.17rem; */
         font-size: 1rem;
         font-weight: 400;
         color: #4949f8;
     }
 
-    .nav-link:hover{
+    .nav-link:hover {
         color: #1313ff;
     }
 
-    .mobile-menu{
+    .mobile-menu {
         opacity: 0;
         margin-right: 10px;
         transition: 0.3s;
     }
-    
-    .mobile-menu.active{
+
+    .mobile-menu.active {
         opacity: 1;
         transition: 0.3s;
     }
-    
+
     .nav-item {
         margin: 0 0.5rem;
     }
-    
+
     .hamburger {
         display: block;
         cursor: pointer;
     }
-    
+
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
-    
+
     .hamburger.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
-    
+
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-    
-    
+
+
 }
 
 
 @media only screen and (max-width: 465px) {
-    
+
     header {
         max-width: 100%;
         display: flex;
         justify-content: center;
         flex-direction: column;
     }
-    
+
     #logo {
         /* text-align: center; */
         /* font-size: 2.6rem; */
         font-size: min(0.5rem);
-        font-size: max(2.6rem);  /*Come back to this*/
+        font-size: max(2.6rem);
+        /*Come back to this*/
         /* font-size: calc(7px + .5vw); */
         margin: 0px;
     }
-    
-    .mobile-menu{ 
-        opacity: 0;            
+
+    .mobile-menu {
+        opacity: 0;
         margin-right: 0;
         transition: 0.3s;
     }
-    
-    .mobile-menu.active{
+
+    .mobile-menu.active {
         opacity: 1;
         margin-right: 0;
         transition: 0.3s;
@@ -203,14 +205,14 @@ header {
         content: url("/Resources/Images/tires.png");
     }
 
-    .nav-link{
+    .nav-link {
         /* font-size: 1.17rem; */
         font-size: .8rem;
         font-weight: 400;
         color: #4949f8;
     }
 
-    .remove-at-320px{
+    .remove-at-320px {
         display: none;
     }
 
@@ -416,9 +418,10 @@ article {
 
 @media only screen and (max-width: 370px) {
 
-    #our-mission{
+    #our-mission {
         /* border: red solid; */
-        box-shadow: 0px 4px 10px 2px #4b4bcd; /* Maybe change this color or delete it */
+        box-shadow: 0px 4px 10px 2px #4b4bcd;
+        /* Maybe change this color or delete it */
     }
 
     #our-mission h2 {
@@ -439,9 +442,10 @@ article {
 
 @media only screen and (max-width: 320px) {
 
-    #our-mission{
+    #our-mission {
         /* border: red solid; */
-        box-shadow: 0px 4px 10px 2px #4b4bcd; /* Maybe change this color or delete it */
+        box-shadow: 0px 4px 10px 2px #4b4bcd;
+        /* Maybe change this color or delete it */
     }
 
     #our-mission h2 {
@@ -471,7 +475,7 @@ article {
 /*Services Styling*/
 
 #services {
-    background: linear-gradient(transparent ,grey, #4e4ef6);
+    background: linear-gradient(transparent, grey, #4e4ef6);
     height: 30rem;
 }
 
@@ -494,44 +498,44 @@ article {
     /* border: solid 3px rgb(50, 111, 243); */
 }
 
-.service{
+.service {
     /* position: relative; */
-    height: 70%;
-    width: 17%; 
+    height: 50%;
+    width: 17%;
     border-radius: 15px;
     box-shadow: 0px 4px 10px 2px #04040e;
     /* box-shadow: X-offset Y-offset Blur Spread; */
-    /* border: solid 3px red; */
+    border: solid 3px red;
     transition: all ease-in-out 1000ms;
 }
 
-.service:hover{
+.service:hover {
     border-radius: 100%;
     transition: all ease-in-out 1000ms;
 }
 
-                    /*Service Images*/
+/*Service Images*/
 
-.service.alignment{
+.service.alignment {
     background-image: url("https://t4.ftcdn.net/jpg/01/29/75/91/240_F_129759159_ziC7X6c2xPYohha3XHhtjDgAQfbmeGxU.jpg");
     background-size: cover;
     min-width: 150px;
 }
 
-.service.brakes{
+.service.brakes {
     background-image: url("https://images.pexels.com/photos/6870323/pexels-photo-6870323.jpeg?auto=compress&cs=tinysrgb&w=600");
     background-size: cover;
     min-width: 150px;
 }
 
-.service.batteries{
+.service.batteries {
     background-image: url("https://images.pexels.com/photos/4517073/pexels-photo-4517073.jpeg?auto=compress&cs=tinysrgb&w=600");
     background-size: cover;
     min-width: 150px;
 }
 
 
-.service a{
+.service a {
     font-size: 2.4rem;
     text-decoration: none;
     display: inline-block;
@@ -542,12 +546,13 @@ article {
 }
 
 
-@media only screen and (max-width: 489px){  /* Fix the Flex box container either add overflow property or ...*/
-    
+@media only screen and (max-width: 489px) {
+    /* Fix the Flex box container either add overflow property or ...*/
+
     #services {
-        background: linear-gradient(transparent ,grey, #4e4ef6);
+        background: linear-gradient(transparent, grey, #4e4ef6);
         height: 35rem;
-        /* border: solid 3px rgb(61, 197, 204); */
+        /* border-top: solid 3px rgb(61, 197, 204); */
     }
 
 
@@ -561,9 +566,9 @@ article {
         align-content: space-between;
         text-align: center;
         /* border: solid 3px rgb(240, 12, 9); */
-    } 
+    }
 
-    .service a{
+    .service a {
         font-size: 2.4rem;
         text-decoration: none;
         display: inline-block;
@@ -571,73 +576,83 @@ article {
         height: 100%;
         border-radius: 15px;
         transition: border-radius ease-in-out 1000ms,
-        padding ease-in-out 1000ms;
+            padding ease-in-out 1000ms;
+            /* border: red solid; */
     }
 
-    .service.alignment{
+    .service.alignment {
         background-image: url("https://t4.ftcdn.net/jpg/01/29/75/91/240_F_129759159_ziC7X6c2xPYohha3XHhtjDgAQfbmeGxU.jpg");
         background-size: cover;
         width: 50%;
     }
-    
-    .service.brakes{
+
+    .service.brakes {
         background-image: url("https://images.pexels.com/photos/6870323/pexels-photo-6870323.jpeg?auto=compress&cs=tinysrgb&w=600");
         background-size: cover;
         width: 50%;
     }
-    
-    .service.batteries{
+
+    .service.batteries {
         background-image: url("https://images.pexels.com/photos/4517073/pexels-photo-4517073.jpeg?auto=compress&cs=tinysrgb&w=600");
         background-size: cover;
         width: 50%;
     }
 
-    .service{
+    .service {
         margin-bottom: 5%;
     }
-
-    .service a:hover{
-        padding-top: 20%;
-        transition: all ease-in-out 1000ms;
-        
+    
+    
+    .service a:hover {
+        padding-top: 35%;
+        /* transition: all ease-in-out 1000ms; */ 
     }
     
-    .service a:active{
-        padding-top: 20.5%; /*come back and fix this*/
+    .service a:active {
+        padding-top: 35.5%;
+        /*come back and fix this*/
+        border: red solid ;
         
     }
     
 }
 
+@media only screen and (max-width: 321px){
+    
+    .service {
+        max-height: 25%;
+    }
+
+}
 
 
 
 
 /*Service Link States*/
 
-.service a:link{
+.service a:link {
     color: #592af5;
 }
 
-.service a:visited{
+.service a:visited {
     color: #e9e9ea;
-    
+
 }
 
-.service a:hover{
+.service a:hover {
     padding-top: 30%;
     transition: all ease-in-out 1000ms;
-    
+
 }
 
-.service a:active{
+.service a:active {
     padding-top: 30.5%;
 }
 
 /*Footer Styling*/
 
-footer{
+footer {
     max-width: 100%;
-    height: 100px;
+    /* height: 100px; */
     /* border: solid 3px rgb(0, 174, 52); */
 }

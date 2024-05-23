@@ -260,7 +260,7 @@ ul#prime-nav a:active {
 /*Our Mission Styling*/
 
 #our-mission {
-    background-image: url("/Resources/Images/Tires-one.jpeg");
+    background-image: url("https://images.pexels.com/photos/5640639/pexels-photo-5640639.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     background-size: cover;
     height: 30rem;
 }
@@ -660,12 +660,11 @@ article {
 @media only screen and (max-width: 425px) {
 
     .service {
-        max-height: 25%;
         border: red solid;
     }
 
     .service:hover {
-        border: rgb(39, 173, 102) solid;
+        /* border: rgb(39, 173, 102) solid; */
         /* transition: all ease-in-out 1000ms; */
     }
 

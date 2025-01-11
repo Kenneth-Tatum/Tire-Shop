@@ -1,4 +1,12 @@
-/*Global Styling*/
+/* Global Styling */
+:root {
+    --primary-color: #4e4ef6;
+    --secondary-color: #c9c9e9;
+    --font-family: "Jersey 25", sans-serif;
+    --font-size-large: 2.6rem;
+    --font-size-medium: 2rem;
+    --font-size-small: 1rem;
+}
 
 * {
     scroll-behavior: smooth;
@@ -8,14 +16,14 @@ html {
     font-size: 16px;
 }
 
-h2 {
-    text-align: center;
-}
-
 body {
-    font-family: "Jersey 25", sans-serif;
+    font-family: var(--font-family);
     font-weight: 400;
     font-style: normal;
+}
+
+h2 {
+    text-align: center;
 }
 
 header {
@@ -24,9 +32,6 @@ header {
     justify-content: space-between;
     background: linear-gradient(#7373d9, grey, transparent);
     box-shadow: 0px 4px 10px 2px #8787f1;
-    /* box-shadow: X-offset Y-offset Blur Spread; */
-    /* position: sticky; come back tho this later
-    top: 0px; */
 }
 
 #mobile-nav {
@@ -34,9 +39,8 @@ header {
     margin-right: 10px;
 }
 
-
 #logo {
-    font-size: 2.6rem;
+    font-size: var(--font-size-large);
     margin-left: 15px;
 }
 
@@ -44,39 +48,29 @@ header {
     display: none;
 }
 
+/* Media Queries */
 @media only screen and (max-width: 785px) {
-
     header {
-        max-width: 100%;
-        display: flex;
         flex-direction: column;
         align-items: center;
-
     }
 
     #logo {
-
-        font-size: 2.6rem;
         margin: 0 auto;
     }
 }
 
 @media only screen and (max-width: 521px) {
-
     header {
-        max-width: 100%;
-        display: flex;
         flex-direction: row;
-        align-items: center;
         justify-content: space-between;
     }
 
     #logo {
-        font-size: 2rem;
+        font-size: var(--font-size-medium);
         margin: 0;
     }
 
-    /*Test Hamburger Menu*/
     ul#prime-nav {
         display: none;
     }
@@ -101,25 +95,6 @@ header {
         justify-content: space-between;
         align-items: center;
         padding: 0;
-
-    }
-
-    .nav-item {
-        margin-left: 1rem;
-    }
-
-    .nav-link {
-        /* font-size: 1.17rem; */
-        font-size: 1rem;
-        font-weight: 400;
-        color: #4949f8;
-    }
-
-    .nav-link:hover {
-        color: #1313ff;
-    }
-
-    .mobile-menu {
         opacity: 0;
         margin-right: 10px;
         transition: 0.3s;
@@ -127,11 +102,20 @@ header {
 
     .mobile-menu.active {
         opacity: 1;
-        transition: 0.3s;
     }
 
     .nav-item {
         margin: 0 0.5rem;
+    }
+
+    .nav-link {
+        font-size: var(--font-size-small);
+        font-weight: 400;
+        color: #4949f8;
+    }
+
+    .nav-link:hover {
+        color: #1313ff;
     }
 
     .hamburger {
@@ -150,55 +134,37 @@ header {
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-
-
 }
 
-
 @media only screen and (max-width: 465px) {
-
     header {
-        max-width: 100%;
-        display: flex;
         justify-content: center;
         flex-direction: column;
     }
 
     #logo {
-        /* text-align: center; */
-        /* font-size: 2.6rem; */
         font-size: min(0.5rem);
         font-size: max(2.6rem);
-        /*Come back to this*/
-        /* font-size: calc(7px + .5vw); */
         margin: 0px;
     }
 
     .mobile-menu {
-        opacity: 0;
         margin-right: 0;
-        transition: 0.3s;
     }
 
     .mobile-menu.active {
-        opacity: 1;
         margin-right: 0;
-        transition: 0.3s;
     }
 }
 
 @media only screen and (max-width: 391px) {
-
     #logo {
-        /* font-size: calc(100% - 2vw); */
         display: none;
-        border: red solid;
     }
 
     #mobile-logo {
         display: inline-block;
         font-size: 2.3rem;
-
     }
 
     #mobile-logo::before {
@@ -206,18 +172,13 @@ header {
     }
 
     .nav-link {
-        /* font-size: 1.17rem; */
-        font-size: .8rem;
-        font-weight: 400;
-        color: #4949f8;
+        font-size: 0.8rem;
     }
 
     .remove-at-320px {
         display: none;
     }
-
 }
-
 
 #logo::before {
     content: url("/Resources/Images/tires.png");
@@ -239,9 +200,8 @@ ul#prime-nav a {
 }
 
 /* Link States */
-
 ul#prime-nav a:link {
-    color: #4e4ef6;
+    color: var(--primary-color);
 }
 
 ul#prime-nav a:visited {
@@ -257,8 +217,7 @@ ul#prime-nav a:active {
     padding-top: 5px;
 }
 
-/*Our Mission Styling*/
-
+/* Our Mission Styling */
 #our-mission {
     background-image: url("https://images.pexels.com/photos/5640639/pexels-photo-5640639.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     background-size: cover;
@@ -266,7 +225,7 @@ ul#prime-nav a:active {
 }
 
 #our-mission h2 {
-    color: #4e4ef6;
+    color: var(--primary-color);
     font-size: 2rem;
     padding: 1em;
 }
@@ -279,8 +238,7 @@ article {
 }
 
 #our-mission article {
-    /* clear: left; */
-    color: #c9c9e9;
+    color: var(--secondary-color);
     font-size: 1.5rem;
     max-width: 40%;
 }
@@ -291,26 +249,18 @@ article {
 }
 
 @media only screen and (max-width: 910px) {
-
     #our-mission figure {
         display: none;
-        float: right;
-        margin-right: 20px;
-        margin-left: 2%;
     }
 
     #our-mission article {
-        /* clear: left; */
         text-align: center;
-        color: #c9c9e9;
         font-size: 2.1rem;
         max-width: 100%;
     }
-
 }
 
 @media only screen and (max-width: 746px) {
-
     #our-mission {
         position: relative;
     }
@@ -318,149 +268,70 @@ article {
     #our-mission h2 {
         position: absolute;
         background-color: rgba(9, 9, 16, 0.4);
-        /*Dark overlay*/
         height: 100%;
         transition: background-color ease-in-out 1000ms;
         width: 100%;
     }
 
-    #our-mission figure {
-        display: none;
-        float: right;
-        margin-right: 20px;
-        margin-left: 2%;
-    }
-
     #our-mission article {
-        /* clear: left; */
         text-align: center;
-        color: #c9c9e9;
         font-size: 1.6rem;
         max-width: 100%;
         position: relative;
         top: 40%;
     }
-
 }
-
 
 @media only screen and (min-width: 426px) and (max-width: 575px) {
-
-    #our-mission {
-        position: relative;
-    }
-
     #our-mission h2 {
-        position: absolute;
         background-color: rgba(9, 9, 16, 0.4);
-        /*Dark overlay*/
-        height: 100%;
-        transition: background-color ease-in-out 1000ms;
-        width: 100%;
-    }
-
-    #our-mission figure {
-        display: none;
-        float: right;
-        margin-right: 20px;
-        margin-left: 2%;
     }
 
     #our-mission article {
-        /* clear: left; */
-        text-align: center;
-        color: #c9c9e9;
         font-size: 1.48rem;
-        max-width: 100%;
-        position: relative;
         top: 28%;
     }
-
 }
 
-
-
-
 @media only screen and (max-width: 425px) {
-
-    #our-mission {
-        position: relative;
-    }
-
     #our-mission h2 {
-        position: absolute;
         background-color: rgba(9, 9, 16, 0.6);
-        /*Dark overlay*/
-        height: 100%;
-        transition: background-color ease-in-out 1000ms;
-    }
-
-
-    #our-mission figure {
-        display: none;
-        float: right;
-        margin-right: 20px;
-        margin-left: 2%;
     }
 
     #our-mission article {
-        /* clear: left; */
-        position: relative;
         top: 40%;
-        text-align: center;
-        color: #c9c9e9;
         font-size: 1.3rem;
-        max-width: 100%;
     }
-
 }
 
-
 @media only screen and (max-width: 370px) {
-
     #our-mission {
-        /* border: red solid; */
         box-shadow: 0px 4px 10px 2px #4b4bcd;
-        /* Maybe change this color or delete it */
     }
 
     #our-mission h2 {
-        position: absolute;
         background-color: rgba(9, 9, 16, 0.8);
-        /*Dark overlay*/
-        height: 100%;
         font-size: 1.6rem;
-        transition: background-color ease-in-out 1000ms;
     }
 
     #our-mission article {
         font-size: 1rem;
-        /* border: red solid; */
     }
-
 }
 
 @media only screen and (max-width: 320px) {
-
     #our-mission {
-        /* border: red solid; */
         box-shadow: 0px 4px 10px 2px #4b4bcd;
-        /* Maybe change this color or delete it */
     }
 
     #our-mission h2 {
-        position: absolute;
         background-color: rgba(9, 9, 16, 0.8);
-        /*Dark overlay*/
-        height: 100%;
         font-size: 1.4rem;
-        transition: background-color ease-in-out 1000ms;
     }
 
     #our-mission article {
-        font-size: .9rem;
+        font-size: 0.9rem;
     }
-
 }
 
 #our-mission img {
@@ -468,27 +339,22 @@ article {
 }
 
 #our-mission figcaption {
-    color: #c9c9e9;
+    color: var(--secondary-color);
 }
 
-
-
-/*Service Link States*/
-
+/* Service Link States */
 .service a:link {
     color: #592af5;
 }
 
 .service a:visited {
     color: #e9e9ea;
-
 }
 
 .service a:hover {
     padding-top: 40%;
     transition: all ease-in-out 1000ms;
     cursor: pointer;
-
 }
 
 .service a:active {
@@ -496,19 +362,14 @@ article {
     transition: none;
 }
 
-
-
-/*Services Styling*/
-
+/* Services Styling */
 #services {
     background: linear-gradient(transparent, grey, #4e4ef6);
     height: 30rem;
 }
 
-
 #services h2 {
     background: linear-gradient(#0a0a0f, grey, transparent);
-    /* box-shadow: 0px 4px 10px 2px #8787f1; */
     font-size: 2.3rem;
     color: #303087;
     height: 65px;
@@ -521,16 +382,13 @@ article {
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    /* border: solid 3px rgb(50, 111, 243); */
 }
 
 .service {
-    /* position: relative; */
     height: 50%;
     width: 17%;
     border-radius: 15px;
     box-shadow: 0px 4px 10px 2px #04040e;
-    /* box-shadow: X-offset Y-offset Blur Spread; */
     border: solid 3px #4e4ef6;
     transition: all ease-in-out 1000ms;
 }
@@ -539,8 +397,6 @@ article {
     border-radius: 100%;
     transition: all ease-in-out 1500ms;
 }
-
-/*Service Images*/
 
 .service.alignment {
     background-image: url("https://t4.ftcdn.net/jpg/01/29/75/91/240_F_129759159_ziC7X6c2xPYohha3XHhtjDgAQfbmeGxU.jpg");
@@ -560,7 +416,6 @@ article {
     min-width: 150px;
 }
 
-
 .service a {
     font-size: 2.4rem;
     text-decoration: none;
@@ -571,10 +426,7 @@ article {
     transition: all ease-in-out 1000ms;
 }
 
-
-@media only screen and (min-width:490px) and (max-width: 733px) {
-
-    /* Fix this, query not working or registering*/
+@media only screen and (min-width: 490px) and (max-width: 733px) {
     .service a:hover {
         padding-top: 25%;
         transition: all ease-in-out 1000ms;
@@ -584,67 +436,22 @@ article {
         padding-top: 25.5%;
         transition: none;
     }
-
-    /* Fix this, query not working or registering*/
-
 }
 
-
 @media only screen and (max-width: 489px) {
-
     #services {
-        background: linear-gradient(transparent, grey, #4e4ef6);
         height: 35rem;
-        /* border-top: solid 3px rgb(61, 197, 204); */
     }
-
 
     #services-container {
         height: 90%;
-        width: 100%;
-        display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        align-content: space-between;
-        text-align: center;
-        /* border: solid 3px rgb(240, 12, 9); */
-    }
-
-    .service a {
-        font-size: 2.4rem;
-        text-decoration: none;
-        display: inline-block;
-        width: 100%;
-        height: 100%;
-        border-radius: 15px;
-        transition: border-radius ease-in-out 1000ms,
-            padding ease-in-out 1000ms;
-        /* border: red solid; */
-    }
-
-    .service.alignment {
-        background-image: url("https://t4.ftcdn.net/jpg/01/29/75/91/240_F_129759159_ziC7X6c2xPYohha3XHhtjDgAQfbmeGxU.jpg");
-        background-size: cover;
-        width: 50%;
-    }
-
-    .service.brakes {
-        background-image: url("https://images.pexels.com/photos/6870323/pexels-photo-6870323.jpeg?auto=compress&cs=tinysrgb&w=600");
-        background-size: cover;
-        width: 50%;
-    }
-
-    .service.batteries {
-        background-image: url("https://images.pexels.com/photos/4517073/pexels-photo-4517073.jpeg?auto=compress&cs=tinysrgb&w=600");
-        background-size: cover;
-        width: 50%;
     }
 
     .service {
+        width: 50%;
         margin-bottom: 5%;
     }
-
 
     .service a:hover {
         padding-top: 35%;
@@ -655,69 +462,42 @@ article {
         padding-top: 35.5%;
         transition: none;
     }
-
 }
 
-
 @media only screen and (max-width: 482px) {
-
     .service:hover {
         border-radius: 10%;
         transition: all ease-in-out 1500ms;
     }
-
 }
 
-
 @media only screen and (max-width: 425px) {
-
-    .service {
-        /* border: red solid; */
-    }
-
-    .service:hover {
-        /* border: rgb(39, 173, 102) solid; */
-        /* transition: all ease-in-out 1000ms; */
-    }
-
     .service a:hover {
         padding-top: 35%;
         transition: all ease-in-out 1000ms;
     }
 }
 
-
-
 @media only screen and (max-width: 321px) {
-
     .service {
         max-height: 25%;
     }
-
 }
 
-/*Find Us Styling*/
-
+/* Find Us Styling */
 #find-us h2 {
     background: linear-gradient(#4e4ef6, grey, transparent);
-    /* box-shadow: 0px 4px 10px 2px #8787f1; */
     font-size: 2.3rem;
     color: #15151e;
     height: 65px;
 }
 
-/*Footer Styling*/
-
-
+/* Footer Styling */
 footer {
     max-width: 100%;
-    /* height: 100px; */
-    /* border: solid 3px rgb(0, 174, 52); */
 }
 
-
-/*Google Map Styling*/
-
+/* Google Map Styling */
 .google-map {
     height: 30rem;
     position: relative;
@@ -726,7 +506,5 @@ footer {
 .google-map iframe {
     height: 100%;
     width: 100%;
-    /* left: 0; */
-    /* top: 0; */
     position: absolute;
 }
